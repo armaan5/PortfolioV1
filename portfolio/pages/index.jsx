@@ -1,29 +1,23 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
+import { createContext } from 'react'
+
 import Header from '../src/components/header'
 import Hero from '../src/components/hero'
+import PageContext from '../src/data/data'
 
-const Index = ( {content} ) => (
-  <div sx={{ height: `calc(100vh - 60px)`}}>
+const Index = () => {
+  return (
+  <PageContext.Provider>
     <div sx={{variant: 'containers.page'}}>
       <Header/>
       <Hero/>
     </div>
-  </div> 
-)
+  </PageContext.Provider>
+  )
+}
 
 
 export default Index
 
-export function getStaticProps() {
-  // get data from CMS
-
-  return {
-    props: {
-      content: {
-        title: 'Hey, I\'m Armaan!'
-      }
-    }
-  }
-}

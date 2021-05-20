@@ -1,9 +1,15 @@
-import { swiss } from '@theme-ui/presets'
+import { swiss, deep } from '@theme-ui/presets'
 
 const theme = {
   ...swiss,
+  initialColorModeName: 'light',
   colors: {
     ...swiss.colors,
+    modes: {
+      dark: {
+        ...deep.colors
+      }
+    }
   },
   containers: {
     page: {
@@ -22,8 +28,6 @@ const theme = {
       px: '4em'
     },
   },
-  styles: {
-    ...swiss.styles
-  }
 }
+console.log(theme)
 export default theme
