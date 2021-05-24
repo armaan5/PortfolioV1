@@ -18,7 +18,7 @@ const theme = {
       flexDirection: 'column',
       m: 0,
       mx: 'auto',
-      px: '20em'
+      px: '16em'
     },
     header: {
       display: 'flex',

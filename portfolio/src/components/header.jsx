@@ -6,7 +6,6 @@ import { FaSun, FaMoon } from 'react-icons/fa'
 
 const Header = () => {
     const [colorMode, setColorMode] = useColorMode()
-    const handleColorChange = () => { setColorMode(colorMode === 'light' ? 'dark' : 'light') }
 
     return (
         <header sx={{ variant: 'containers.header' }}>
