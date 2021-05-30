@@ -5,9 +5,9 @@ import { FaReact, FaNodeJs, FaCss3, FaSwift, FaJava, FaAws } from 'react-icons/f
 
 const Skills = () => {
     return(
-        <div sx={{mt: '2em', display: 'flex', flexDirection: 'column'}}>
-            <h2 sx={{alignSelf: 'center'}}>Languages/Tools</h2>
-            <div sx={{display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly'}}>
+        <div sx={{mt: '2em', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+            <h2 sx={{ mb: '2em'}}>Languages/Tools</h2>
+            <div sx={{variant: 'containers.skills'}}>
                 <FaReact size={40}/>
                 <FaNodeJs size={40}/>
                 <FaCss3 size={40}/>

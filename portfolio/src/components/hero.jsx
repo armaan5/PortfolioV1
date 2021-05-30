@@ -10,20 +10,43 @@ import pageData from '../data/data'
 const Hero = () => {
     console.log(pageData)
     return (
-        <div sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around' }}>
-            <Image src={avatar} sx={{ height: '250px', width: 'auto', borderRadius: '4px' }} />
+        <div sx={{
+            display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', '@media screen and (max-width: 1000px)': {
+                flexDirection: 'column'
+            }
+        }}>
+            <Image src={avatar} sx={{
+                variant: 'containers.image', '@media screen and (max-width: 1000px)': {
+                    objectFit: 'contain'
+                }
+            }} />
             <div>
                 <div sx={{ display: 'flex', flexDirection: 'row' }}>
                     <h2 sx={{ color: 'primary' }}>Hello</h2>
                     <h2>, I'm Armaan</h2>
                 </div>
                 <h3>{pageData.hero}</h3>
-                <div sx={{ display: 'flex', flexDirection: 'row', }}>
-                    <a href={pageData.github} sx={{color: 'inherit'}}>
-                        <FaGithub size={35} sx={{mr: '2em'}}/>
+                <div sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', alignItems: 'center' }}>
+                    <a href={pageData.github} sx={{
+                        color: 'inherit', ':hover': {
+                            color: 'primary',
+                        }
+                    }}>
+                        <FaGithub size={35} />
                     </a>
-                    <a href={pageData.linkedin} sx={{color: 'inherit'}}>
-                        <FaLinkedin size={35}/>
+                    <a href={pageData.linkedin} sx={{
+                        color: 'inherit', ':hover': {
+                            color: 'primary',
+                        }
+                    }}>
+                        <FaLinkedin size={35} />
+                    </a>
+                    <a href="mailto:dhanoa.armaan@outlook.com" sx={{
+                        color: 'inherit', ':hover': {
+                            color: 'primary',
+                        }
+                    }}>
+                        dhanoa.armaan@outlook.com
                     </a>
                 </div>
             </div>
