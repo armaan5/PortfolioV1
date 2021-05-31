@@ -22,7 +22,10 @@ const theme = {
       flexDirection: 'column',
       m: 0,
       mx: 'auto',
-      px: ['16em', '8em', '4em']
+      px: '16em',
+      '@media screen and (max-width: 1000px)': {
+        px: '4em'
+      }
     },
     header: {
       display: 'flex',
@@ -42,10 +45,11 @@ const theme = {
       gridTemplateRows: '1fr 1fr',
       gap: '8em 16em',
       '@media screen and (max-width: 1000px)': {
+        gridTemplateColumns: '1fr 1fr',
+        gridTemplateRows: '1fr 1fr 1fr',
         gap: '4em 8em'
       }
     }
   },
 }
-console.log(theme)
 export default theme
