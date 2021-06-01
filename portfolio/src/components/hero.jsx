@@ -10,11 +10,7 @@ import pageData from '../data/data'
 const Hero = () => {
     console.log(pageData)
     return (
-        <div sx={{
-            display: 'flex', flexDirection: 'row', justifyContent: 'space-between', '@media screen and (max-width: 1000px)': {
-                flexDirection: 'column'
-            }
-        }}>
+        <div sx={{ variant: 'containers.hero' }}>
             <Image src={avatar} sx={{
                 variant: 'containers.image'
             }} />

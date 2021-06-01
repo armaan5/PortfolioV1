@@ -34,12 +34,21 @@ const theme = {
       justifyContent: 'flex-end',
       my: '2em',
     },
+    hero: {
+      display: 'flex',
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      '@media screen and (max-width: 1500px)': {
+        flexDirection: 'column'
+      }
+    },
     image: {
       height: '250px',
       width: 'auto',
       borderRadius: '4px',
-      '@media screen and (max-width: 1000px)': {
-        objectFit: 'contain'
+      '@media screen and (max-width: 1500px)': {
+        objectFit: 'contain',
+        alignSelf: 'flex-start'
       }
     },
     skills: {
@@ -53,7 +62,7 @@ const theme = {
         gridTemplateRows: '1fr 1fr 1fr',
       }
     },
-    skill : {
+    skill: {
       bg: 'highlight',
       borderRadius: '4px',
       display: 'flex',
@@ -62,11 +71,11 @@ const theme = {
       justifyContent: 'space-evenly',
     },
     project: {
-      mt: '2em', 
-      display: 'flex', 
-      flexDirection: 'row', 
-      bg: 'highlight', 
-      borderRadius: '4px', 
+      mt: '2em',
+      display: 'flex',
+      flexDirection: 'row',
+      bg: 'highlight',
+      borderRadius: '4px',
       p: '1em',
       ':hover': {
         cursor: 'pointer',
