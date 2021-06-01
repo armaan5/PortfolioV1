@@ -8,7 +8,13 @@ const Projects = () => {
     return (
         <div sx={{ mt: '2em', display: 'flex', flexDirection: 'column', mb: '2em' }}>
             <h2>Projects</h2>
-            <div sx={{ mt: '2em', display: 'flex', flexDirection: 'row', bg: 'highlight', borderRadius: '4px', p: '1em' }}>
+            <div 
+                sx={{ variant: 'containers.project' }}
+                onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href='https://www.mysticlight.net';
+                }}
+            >
                 <Image src={mLight} sx={{ variant: 'containers.image' }} />
                 <div sx={{ ml: '2em', display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
                     <div>

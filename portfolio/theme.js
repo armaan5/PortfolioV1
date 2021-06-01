@@ -60,6 +60,17 @@ const theme = {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'space-evenly',
+    },
+    project: {
+      mt: '2em', 
+      display: 'flex', 
+      flexDirection: 'row', 
+      bg: 'highlight', 
+      borderRadius: '4px', 
+      p: '1em',
+      ':hover': {
+        cursor: 'pointer',
+      }
     }
   },
 }
