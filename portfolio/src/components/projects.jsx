@@ -2,7 +2,7 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import { Image } from 'theme-ui'
-import mLight from '../../public/mlight.png'
+import mLight from '../../public/mlight.jpg'
 
 const Projects = () => {
     return (
