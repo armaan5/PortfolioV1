@@ -11,14 +11,12 @@ const Hero = () => {
     console.log(pageData)
     return (
         <div sx={{
-            display: 'flex', flexDirection: 'row', justifyContent: 'space-evenly', '@media screen and (max-width: 1000px)': {
+            display: 'flex', flexDirection: 'row', justifyContent: 'space-between', '@media screen and (max-width: 1000px)': {
                 flexDirection: 'column'
             }
         }}>
             <Image src={avatar} sx={{
-                variant: 'containers.image', '@media screen and (max-width: 1000px)': {
-                    objectFit: 'contain'
-                }
+                variant: 'containers.image'
             }} />
             <div>
                 <div sx={{ display: 'flex', flexDirection: 'row' }}>

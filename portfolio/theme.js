@@ -14,7 +14,7 @@ const theme = {
   breakpoints: [
     '40em', '56em', '64em'
   ],
-  
+
   containers: {
     page: {
       width: '100%',
@@ -22,7 +22,7 @@ const theme = {
       flexDirection: 'column',
       m: 0,
       mx: 'auto',
-      px: '16em',
+      px: '20em',
       '@media screen and (max-width: 1000px)': {
         px: '4em'
       }
@@ -37,18 +37,29 @@ const theme = {
     image: {
       height: '250px',
       width: 'auto',
-      borderRadius: '4px'
+      borderRadius: '4px',
+      '@media screen and (max-width: 1000px)': {
+        objectFit: 'contain'
+      }
     },
     skills: {
+      width: '50%',
       display: 'grid',
       gridTemplateColumns: '1fr 1fr 1fr',
       gridTemplateRows: '1fr 1fr',
-      gap: '8em 16em',
+      gap: '2em',
       '@media screen and (max-width: 1000px)': {
         gridTemplateColumns: '1fr 1fr',
         gridTemplateRows: '1fr 1fr 1fr',
-        gap: '4em 8em'
       }
+    },
+    skill : {
+      bg: 'highlight',
+      borderRadius: '4px',
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-evenly',
     }
   },
 }
